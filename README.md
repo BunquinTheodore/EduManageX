@@ -1,126 +1,94 @@
+![Blue Black Modern Grunge Information Technology Animated Banner](https://github.com/user-attachments/assets/ae7cfead-4892-4762-874a-b3094b194c8f)
 
-https://github.com/user-attachments/assets/68c82fc8-6348-4cb3-9f7d-08ad28212dcc
-
-
-# 𝐌𝐀𝐙𝐄 𝐒𝐎𝐋𝐕𝐄𝐑 𝐒𝐈𝐌𝐔𝐋𝐀𝐓𝐈𝐎𝐍
+# SCHOOL MANAGEMENT SYSTEM
 
 ## 🎯 Introduction 
-This project outlines the development of a C++ based simulation tool for maze pathfinding. The simulation enables users to learn how basic pathfinding works using graphs. This project aims to educate users on basic graph traversal and pathfinding algorithms, providing a hands-on learning experience📚.
+This project outlines the development of a Java-based application for managing a school system. The system allows users to manage students and teachers, track payments, and provide a summary of the school's financials. This project aims to demonstrate the implementation of basic object-oriented programming (OOP) principles in a real-world application.
 
-## 🔎Objectives
+## 🔎 Objectives
 
 | No.                         | Objective                                                                                          |
 |-----------------------------|---------------------------------------------------------------------------------------------------|
-| Utilizes Pathfinding Algorithms | Implement and demonstrate algorithms like Dijkstra's Algorithm, Depth First Search (DFS), and Breadth First Search (BFS). |
-| Creates and Loads Mazes     | Enable users to create, load, and interact with predefined maze representations.                  |
-| Determines Shortest Path    | Educate users on finding the shortest path through visualization and comparison of different pathfinding techniques.|
+| Student and Teacher Management | Implement functionalities to add, view, and manage students and teachers in the school. |
+| Financial Tracking           | Track the total money earned and spent by the school, including student fees and teacher salaries.|
+| User-Friendly Interface      | Provide a simple and intuitive GUI for users to interact with the system.                        |
 
 ## 🔬 Scope and Limitations
 
-- **Scope✅**: The project covers the development of a generic map representation and the implementation of pathfinding algorithms.
-- **Limitations❌**: The simulation is limited to predefined maps and will not account for real-time changes in the environment.
+- **Scope✅**: The project covers the basic management of students and teachers, including adding, viewing, and financial tracking.
+- **Limitations❌**: The system does not cover advanced functionalities like real-time updates, complex financial management, or integration with external databases.
 
 ## 👀 Features
 
-- **Map Representation**: A generic grid or graph representation of a maze.
-- **Pathfinding Algorithm**: Implementation of efficient pathfinding algorithms to calculate optimal routes.
-- **Visualization**: Clear and visually appealing display of the calculated path.
-- **User Input Handling**: Smooth user interaction for selecting mazes and algorithms, with robust error handling.
-- Desired output: 
+- **Student Management**: Add and manage students, including tracking grades and fees paid.
+- **Teacher Management**: Add and manage teachers, including tracking salaries.
+- **Financial Overview**: View the total money earned and spent by the school.
+- **User Interface**: A simple GUI built using Java Swing for easy interaction.
 
-![ito](https://github.com/user-attachments/assets/76a882ae-6198-40a4-be2c-01d99306f34b)
+# 🌐Program Demonstration
+
+## 👉User Interface Overview
+![Screenshot 2024-08-23 132439](https://github.com/user-attachments/assets/38e519d7-b841-4510-b889-71f022bb1c4e)
+
+## 🎓Student
+![Screenshot 2024-08-23 132700](https://github.com/user-attachments/assets/58a6727c-49aa-405f-90e0-404f36690413)
+![Screenshot 2024-08-23 133037](https://github.com/user-attachments/assets/0c898692-fcef-4d54-a36b-2f8c491a5b01)
+
+## 👩‍🏫Teacher
+![Screenshot 2024-08-23 132634](https://github.com/user-attachments/assets/16c13529-3a19-4344-b5e1-5de7633fde03)
+![Screenshot 2024-08-23 133021](https://github.com/user-attachments/assets/6905f2fe-690e-4077-8cfd-92ccc5560871)
+
+
+## 📊Summary
+![Screenshot 2024-08-23 132959](https://github.com/user-attachments/assets/a21548c9-2cba-4d67-b5c1-960303fadebb)
+
 
 ## 💻 Technologies
 
 ### Programming Language
-- **C++**
+- **Java**
 
-### Algorithms
-- `Dijkstra Algorithm`
-- `Depth First Search`
-- `Breadth First Search`
+### Libraries and Tools
+- `Swing` - for the GUI
+- `JDK` - Java Development Kit
 
 ### Version Control
 - **Git**
 
 ### Development Tools
-- `Visual Studio Code`
-- `Visual Studio BuildTools`
-- `Cmake`
-- `Ninja`
-
-## ⚔️ Maze Options
-- Maze 1:
-
-  ![maze4](https://github.com/user-attachments/assets/84c5bbe4-9f35-4e58-9ee6-048c18288d30)
-- Maze 2
-
-  ![maze3](https://github.com/user-attachments/assets/798003f7-6135-48e9-92ed-cf2807af5c26)
-- Maze 3:
-
-  ![maze2](https://github.com/user-attachments/assets/a8eb900e-e011-460b-85f3-4013c407d5b7)
-- Maze 4:
-
-   ![maze1](https://github.com/user-attachments/assets/c2b5909e-89f7-4f40-8a8f-e728bdd84b2e)
-- Maze 5:
-
-  ![maze5](https://github.com/user-attachments/assets/0d18e2d8-1897-4949-be41-f44712bf42a9)
+- `IntelliJ IDEA` or `Eclipse`
 
 ## 🎞 Project Output Simulation
-- ▶️ DEPTH FIRST SEARCH:
-
-    https://github.com/user-attachments/assets/e47d734d-6f49-43ab-86c7-5074405b0db4
-
-- ▶️ BREADTH FIRST SEARCH:
- 
-    https://github.com/user-attachments/assets/caccfba3-bf92-4382-9dba-49ccb31d7347
-
-## 🔧 Building from Source
-
-
-Pre-requisites
-- cmake ([cmake.org](https://cmake.org/))
-- cl.exe ([MSVC](https://visualstudio.microsoft.com/downloads/?q=build+tools)) or gcc.exe ([MSYS2](https://www.msys2.org/) or [Conan](https://conan.io/))
-- Ninja (Reccomended)(can be installed using MSYS or Conan)
-
-1. Clone the repository: 
-    ```bash
-    git clone https://github.com/your-repo/Amaze.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd amaze
-    ```
-3. Build the project:
-    ```bash
-    mkdir build && cd build
-    cmake -GNinja .. && cmake --build .
-    ```
+- ▶️ **Student and Teacher Management:** Users can add and manage students and teachers, ensuring the school's operations run smoothly.
+- ▶️ **Financial Overview:** Users can view a summary of the school's financials, including total money earned and spent.
 
 ## 🚀 Usage Instructions
 
-1. Run the executable:
+1. **Clone the repository:**
     ```bash
-    ./path/to/Amaze/build/Amaze
+    git clone https://github.com/your-repo/SchoolManagementSystem.git
     ```
-2. Follow the on-screen instructions to load or create a maze.
-3. Select the pathfinding algorithm to use and visualize the pathfinding process.
+2. **Navigate to the project directory:**
+    ```bash
+    cd SchoolManagementSystem
+    ```
+3. **Compile and run the project:**
+    ```bash
+    javac MainUI.java
+    java MainUI
+    ```
 
 ## 🧠 Algorithm Explanation
 
-- **Dijkstra Algorithm**: Finds the shortest path between nodes in a graph.
-- **Depth First Search (DFS)**: Explores as far as possible along each branch before backtracking.
-- **Breadth First Search (BFS)**: Explores all nodes at the present depth level before moving on to nodes at the next depth level.
+- **Object-Oriented Design:** The system is designed using OOP principles, with separate classes for `Student`, `Teacher`, and `School` to manage different aspects of the school system.
 
 ## 🤍 Acknowledgements
 
-- Subject Instructor: Ms. Fatima Marie P. Agdon🥰
+- **Subject Instructor:** Ms. Fatima Marie P. Agdon
 
 ## ⌨️ Authors
 
 | Name                             | GitHub                                                | SR Code     |
 |----------------------------------|-------------------------------------------------------|-------------|
-| 👨‍🎓 Antenor, Justine              | [Tiiinnn](https://github.com/Tiiinnn)                 | 23-05942    |
 | 👨‍🎓 Bunqnuin, Theodore Von Joshua | [BunquinTheodore](https://github.com/BunquinTheodore) | 23-03102    |
-| 👨‍🎓 Saludo, Noel Zyrence          | [NoelSaludo](https://github.com/NoelSaludo)           | 23-08992    |
-| 👨‍🎓 Soriano, Albert JR            | [Soriano-San](https://github.com/Soriano-San)         | 23-03104    |
+
