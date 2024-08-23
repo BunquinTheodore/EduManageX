@@ -1,0 +1,18 @@
+Create a "School Management System" where it manages students, teachers, and its funds
+
+1. Money Management System for School
+- Keep track of student totla fees
+- Keep track of fees that are already paid
+- Keep track of teachers salary
+
+2. Teacher Management System
+- Teacher's ID
+- Teacher's Name
+- Teacher's Salary
+
+3. Student Management System 
+- Student's ID
+- Student's Name
+- Student's Grade
+- Student's Fees paid
+- Student's Total Fees
