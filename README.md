@@ -38,6 +38,8 @@ This project outlines the development of a Java-based application for managing a
 ![Screenshot 2024-08-23 132634](https://github.com/user-attachments/assets/16c13529-3a19-4344-b5e1-5de7633fde03)
 ![Screenshot 2024-08-23 133021](https://github.com/user-attachments/assets/6905f2fe-690e-4077-8cfd-92ccc5560871)
 
+## 📽Video Demonstration
+https://github.com/user-attachments/assets/f8a004b6-e2a2-4f68-ab20-4797abc63645
 
 ## 📊Summary
 ![Screenshot 2024-08-23 132959](https://github.com/user-attachments/assets/a21548c9-2cba-4d67-b5c1-960303fadebb)
