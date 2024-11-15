@@ -30,7 +30,20 @@ EduManageX is a Java-based application designed to manage various school operati
 # 📽️ Console Program Design
 ![{777B1A6B-8BEB-490B-85AB-C0B7B7D336B1}](https://github.com/user-attachments/assets/e17ec6fe-f598-4876-b6a0-1d39145a63e3)
 
+## 🧠 Algorithm Explanation
 
+- **Object-Oriented Design**: The project applies OOP principles with structured classes (`Student`, `Teacher`, `School`, etc.) that modularize different aspects of the system, making it scalable and maintainable.
+- **Error Handling**: Input validation ensures correct data entry and informs users when invalid input is detected, enhancing user experience.
+
+## 🏗 Project Architecture
+- **Classes and Relationships:** The project follows a modular OOP design with key classes like `Student`, `Teacher`, and `School`. Each class has specific responsibilities, with a central `SchoolManagementSystem` that manages all instances.
+
+
+## 🧪 Testing and Debugging
+This project underwent rigorous testing to ensure reliability. Manual tests were performed for each feature, including:
+- **Student and Teacher Registration:** Tested for unique IDs, name, and password requirements.
+- **Financial Summary Calculation:** Validated income and expenditure calculations to confirm accurate financial summaries.
+- **Error Handling and Retry Logic:** Ensured all inputs are validated, and users receive informative error messages.
 # 🌐 Program User Interface (Prototpye)
 
 ## 👉 User Interface Overview
@@ -85,21 +98,6 @@ EduManageX is a Java-based application designed to manage various school operati
     javac MainUI.java
     java MainUI
     ```
-
-## 🧠 Algorithm Explanation
-
-- **Object-Oriented Design**: The project applies OOP principles with structured classes (`Student`, `Teacher`, `School`, etc.) that modularize different aspects of the system, making it scalable and maintainable.
-- **Error Handling**: Input validation ensures correct data entry and informs users when invalid input is detected, enhancing user experience.
-
-## 🏗 Project Architecture
-- **Classes and Relationships:** The project follows a modular OOP design with key classes like `Student`, `Teacher`, and `School`. Each class has specific responsibilities, with a central `SchoolManagementSystem` that manages all instances.
-
-
-## 🧪 Testing and Debugging
-This project underwent rigorous testing to ensure reliability. Manual tests were performed for each feature, including:
-- **Student and Teacher Registration:** Tested for unique IDs, name, and password requirements.
-- **Financial Summary Calculation:** Validated income and expenditure calculations to confirm accurate financial summaries.
-- **Error Handling and Retry Logic:** Ensured all inputs are validated, and users receive informative error messages.
 
 ## 🚧 Future Enhancements
 Planned updates include:
