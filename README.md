@@ -95,6 +95,22 @@ EduManageX is a Java-based application designed to manage various school operati
 - **Object-Oriented Design**: The project applies OOP principles with structured classes (`Student`, `Teacher`, `School`, etc.) that modularize different aspects of the system, making it scalable and maintainable.
 - **Error Handling**: Input validation ensures correct data entry and informs users when invalid input is detected, enhancing user experience.
 
+## 🏗 Project Architecture
+- **Classes and Relationships:** The project follows a modular OOP design with key classes like `Student`, `Teacher`, and `School`. Each class has specific responsibilities, with a central `SchoolManagementSystem` that manages all instances.
+
+
+## 🧪 Testing and Debugging
+This project underwent rigorous testing to ensure reliability. Manual tests were performed for each feature, including:
+- **Student and Teacher Registration:** Tested for unique IDs, name, and password requirements.
+- **Financial Summary Calculation:** Validated income and expenditure calculations to confirm accurate financial summaries.
+- **Error Handling and Retry Logic:** Ensured all inputs are validated, and users receive informative error messages.
+
+## 🚧 Future Enhancements
+Planned updates include:
+- **Database Integration:** Expand the system to support external databases for more robust data handling.
+- **Automated Notifications:** Add email/SMS notifications for overdue payments.
+- **Data Export Options:** Enable exporting data to CSV for easy reporting.
+
 ## 🤍 Acknowledgements
 
 - **Instructor:** Ms. Fatima Marie P. Agdon
