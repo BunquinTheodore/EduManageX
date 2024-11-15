@@ -1,8 +1,4 @@
-
-https://github.com/user-attachments/assets/e8a80ab0-5918-4dac-8953-9855ff2972e7
-
-
-
+https://github.com/user-attachments/assets/9c816c77-621c-45db-877a-e6ad0be456dd
 
 # EduManageX: SCHOOL MANAGEMENT SYSTEM
 
