@@ -1,4 +1,8 @@
-![Blue Black Modern Grunge Information Technology Animated Banner](https://github.com/user-attachments/assets/ae7cfead-4892-4762-874a-b3094b194c8f)
+
+https://github.com/user-attachments/assets/e8a80ab0-5918-4dac-8953-9855ff2972e7
+
+
+
 
 # EduManageX: SCHOOL MANAGEMENT SYSTEM
 
@@ -26,6 +30,10 @@ EduManageX is a Java-based application designed to manage various school operati
 - **User Authentication**: Secure login with minimum ID and password requirements.
 - **Error Handling**: Includes input validation, retry mechanisms, and informative error messages for user inputs.
 - **Liabilities and Wallet System**: Tracks student liabilities, tuition payments, and wallet top-ups.
+
+# 📽️ Console Program Design
+![{777B1A6B-8BEB-490B-85AB-C0B7B7D336B1}](https://github.com/user-attachments/assets/e17ec6fe-f598-4876-b6a0-1d39145a63e3)
+
 
 # 🌐 Program User Interface (Prototpye)
 
