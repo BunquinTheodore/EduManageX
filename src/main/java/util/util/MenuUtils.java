@@ -56,7 +56,7 @@ public class MenuUtils {
         if (id.length() >= 8 && password.length() >= 8) {
             Student student = new Student(id, password, name);
             school.addStudent(student);
-            schoolManager.registerStudent(id, password);  // Register the student
+            schoolManager.registerStudent(id, password);  
             System.out.println("Student registered successfully.");
         }
         else {
@@ -81,9 +81,9 @@ public class MenuUtils {
         }
 
         if (id.length() >= 8 && password.length() >= 8) {
-            Teacher teacher = new Teacher(id, password, name);  // Initialize with default salary
+            Teacher teacher = new Teacher(id, password, name);  
             school.addTeacher(teacher);
-            schoolManager.registerTeacher(id, password);  // Register the teacher
+            schoolManager.registerTeacher(id, password);  
             System.out.println("  Teacher registered successfully.");
         } else {
             System.out.println("  ID and Password must be at least 8 characters.");
@@ -129,7 +129,8 @@ public class MenuUtils {
             System.out.println(" 5. Show Liabilities");
             System.out.println(" 6. View Wallet");
             System.out.println(" 7. Show Grade");
-            System.out.println(" 8. Back");
+            System.out.println(" 8. Scholarship");
+            System.out.println(" 9. Back");
             System.out.println("-------------------------------------------------------");
             System.out.print(" Enter your choice: ");
         
@@ -161,12 +162,15 @@ public class MenuUtils {
                     student.showLiabilities();
                     break;
                 case 6:
-                    student.viewWallet(); // Calls the viewWallet method
+                    student.viewWallet(); 
                     break;
                 case 7:
                     student.showGrade();
                     break;
-                case 8:
+                case 8: 
+                    student.applyScholarship();
+                    break;
+                case 9:
                     return;
                 default:
                     System.out.println("Invalid choice. Try again.");
