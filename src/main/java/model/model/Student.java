@@ -17,6 +17,8 @@ public class Student extends Person {
     private double tuitionLiability;
     private double tuition;
     private double paidTuition;
+    private double totalGrades;
+    private double roundedAverageGrade;
 
 
     public Student(String id, String password, String name) {
@@ -30,6 +32,8 @@ public class Student extends Person {
         this.enrolledYearLevels = new ArrayList<>();
         this.tuition = 30000;
         this.paidTuition = 0.0;
+        this.totalGrades = 0;
+        this.roundedAverageGrade = 0.0;
     }
 
     public String getId() {
@@ -304,7 +308,6 @@ public class Student extends Person {
             return;
         }
     
-        double totalGrades = 0;
         int subjectCount = 0;
         Random random = new Random();
         double[] possibleGrades = {1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0};
@@ -329,11 +332,45 @@ public class Student extends Person {
     
         if (subjectCount > 0) {
             double averageGrade = totalGrades / subjectCount;
-            System.out.printf("\nAverage Grade: %.2f\n", averageGrade);
+            roundedAverageGrade = calculateAverageGrade(averageGrade);
+            System.out.printf("\nAverage Grade: %.2f (Rounded: %.2f)\n", averageGrade, roundedAverageGrade);
         } else {
             System.out.println("No subjects found to calculate an average grade.");
         }
     }
+
+    public double calculateAverageGrade(double averageGrade) {
+        double[] validGrades = {1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0};
     
+        double closestGrade = validGrades[0];
+        double smallestDifference = Math.abs(averageGrade - closestGrade);
     
+        for (double validGrade : validGrades) {
+            double difference = Math.abs(averageGrade - validGrade);
+            if (difference < smallestDifference) {
+                closestGrade = validGrade;
+                smallestDifference = difference;
+            }
+        }
+        return closestGrade;
+    }
+    
+
+    public void applyScholarship() {
+        if (!isEnrolled) {
+            System.out.println("Cannot apply for a scholarship if not enrolled.");
+        }
+        else {
+            System.out.printf("Rounded Average Grade: %.2f%n", roundedAverageGrade);
+            
+            if (roundedAverageGrade >= 1.0 && roundedAverageGrade <= 1.50) {
+                double scholarshipAmount = 10000;
+                walletBalance += scholarshipAmount;
+                System.out.println("Congratulations! You received a scholarship of PHP " + scholarshipAmount + ".");
+                System.out.println("Your updated wallet balance is: PHP " + walletBalance);
+            } else {
+                System.out.println("No scholarship applicable based on your grades.");
+            }
+        }
+    }
 }
