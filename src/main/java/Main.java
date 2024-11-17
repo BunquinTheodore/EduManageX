@@ -9,7 +9,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         School school = new School();
 
-        // Display banner and program information once at startup
         System.out.println("               ==============================================================================");
         System.out.println("                                              E D U  M A N A G E   X");
         System.out.println("               ==============================================================================");
@@ -27,7 +26,7 @@ public class Main {
 
             try {
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1:
@@ -51,7 +50,7 @@ public class Main {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a number from the menu.");
-                scanner.nextLine(); // Clear the invalid input
+                scanner.nextLine(); 
             }
         }
     }
