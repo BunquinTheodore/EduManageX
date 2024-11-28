@@ -1,14 +1,20 @@
+// Define the package
 package model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class School {
+    // Declare the list to hold students
     private List<Student> students;
+    // Declare the list to hold teachers
     private List<Teacher> teachers;
+    // Declare the total funds available in the school
     private double totalFunds;    
+    // Declare the total salaries paid to teachers
     private double totalSalaries; 
 
+    // Constructor to initialize the lists and fund variables
     public School() {
         this.students = new ArrayList<>();
         this.teachers = new ArrayList<>();
@@ -16,14 +22,17 @@ public class School {
         this.totalSalaries = 0.0;
     }
 
+    // Method to add a student to the students list
     public void addStudent(Student student) {
         students.add(student);
     }
 
+    // Method to add a teacher to the teachers list
     public void addTeacher(Teacher teacher) {
         teachers.add(teacher);
     }
 
+    // Method to get a student by their ID
     public Student getStudentById(String id) {
         for (Student student : students) {
             if (student.getId().equals(id)) {
@@ -33,6 +42,7 @@ public class School {
         return null; 
     }
 
+    // Method to get a teacher by their ID
     public Teacher getTeacherById(String id) {
         for (Teacher teacher : teachers) {
             if (teacher.getId().equals(id)) {
@@ -42,14 +52,17 @@ public class School {
         return null; 
     }
 
+    // Method to get all students
     public List<Student> getAllStudents() {
         return students;
     }
 
+    // Method to get all teachers
     public List<Teacher> getAllTeachers() {
         return teachers;
     }
 
+    // Method to display a summary of the school's financials, including student tuition and teacher salaries
     public void displaySchoolSummary() {
         totalFunds = 0.0;
         System.out.println("========================================================================================================");
@@ -90,6 +103,4 @@ public class School {
         System.out.println(netIncomeInfo);
         System.out.println("====================================================\n");
     }
-    
 }
-
