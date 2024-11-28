@@ -1,7 +1,8 @@
+//Made this file within the package of util
 package util;
 
+//Imported needed packages and classes
 import java.util.Scanner;
-
 import model.School;
 import model.Student;
 import model.Teacher;
