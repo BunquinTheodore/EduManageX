@@ -1,3 +1,7 @@
+//Theodore Von Joshua M. Bunquin
+//CS 2101 | Object Oriented Programming
+
+//Import needed packages and classes
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -8,7 +12,8 @@ public class Main {
    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         School school = new School();
-
+      //Console Banner
+      
         System.out.println("               ==============================================================================");
         System.out.println("                                              E D U  M A N A G E   X");
         System.out.println("               ==============================================================================");
@@ -55,6 +60,7 @@ public class Main {
         }
     }
 
+   //This is my main menu within a method
     private static void displayMainMenu() {
         System.out.println("\n\n=======================================================");
         System.out.println("               SCHOOL MANAGEMENT SYSTEM");
