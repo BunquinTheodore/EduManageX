@@ -8,7 +8,8 @@ import model.Teacher;
 
 public class MenuUtils {
     private static SchoolManager schoolManager = new SchoolManager();
-
+    
+//Registration Menu for both Teachers and Students
     public static void registerMenu(Scanner scanner, School school) {
         System.out.println("\n\n=======================================================");
         System.out.println("             R E G I S T E R   M E N U");
@@ -36,7 +37,8 @@ public class MenuUtils {
             System.out.println("Invalid choice. Please try again.");
         }
     }
-    
+
+    //Student Registration
     private static void registerStudent(Scanner scanner, School school) {
         System.out.println("\n=======================================================");
         System.out.println("        S T U D E N T   R E G I S T R A T I O N");
@@ -53,6 +55,7 @@ public class MenuUtils {
             return;
         }
 
+        //Dictates that the ID and password must be greater than or equal to 8 characters
         if (id.length() >= 8 && password.length() >= 8) {
             Student student = new Student(id, password, name);
             school.addStudent(student);
@@ -64,6 +67,7 @@ public class MenuUtils {
         }
     }
 
+    //Teacher Registration Menu
     private static void registerTeacher(Scanner scanner, School school) {
         System.out.println("\n=======================================================");
         System.out.println("        T E A C H E R   R E G I S T R A T I O N");
@@ -80,6 +84,7 @@ public class MenuUtils {
             return;
         }
 
+        //Dictates that the ID and password must be greater than or equal to 8 characters
         if (id.length() >= 8 && password.length() >= 8) {
             Teacher teacher = new Teacher(id, password, name);  
             school.addTeacher(teacher);
@@ -90,6 +95,7 @@ public class MenuUtils {
         }
     }
 
+    //Login Menu
     public static void loginAccount(Scanner scanner, School school) {
         MenuUtils.clearScreen();
         System.out.println("\n=======================================================");
@@ -100,6 +106,7 @@ public class MenuUtils {
         System.out.print("  Enter Password: ");
         String password = scanner.nextLine();
 
+        //Checks if ID exist, then checks if password is correct for both teacher and student
         if (schoolManager.isStudentLoginValid(id, password)) {
             System.out.println("Student login successful.");
             Student student = school.getStudentById(id);
@@ -117,6 +124,7 @@ public class MenuUtils {
         }
     }
 
+    //Student Menu
     private static void studentMenu(Scanner scanner, Student student) {
         while (true) {
             System.out.println("\n=======================================================");
@@ -150,9 +158,10 @@ public class MenuUtils {
                     student.enroll(scanner);
                     break;
                 case 3:
+                    //Lets the user input any value which will be added to the wallet
                     System.out.print("Enter top-up amount: ");
                     double amount = scanner.nextDouble();
-                    scanner.nextLine(); // Consume newline
+                    scanner.nextLine();
                     student.topUp(amount);
                     break;
                 case 4:
@@ -177,6 +186,8 @@ public class MenuUtils {
             }
         }
     }
+
+    //Teacher Menu
     private static void teacherMenu(Scanner scanner, Teacher teacher) {
         while (true) {
             System.out.println("\n=======================================================");
@@ -229,6 +240,7 @@ public class MenuUtils {
         }
     }
 
+    //Clears console after the process
     public static void clearScreen() {  
         System.out.print("\033[H\033[2J");  
         System.out.flush();  
