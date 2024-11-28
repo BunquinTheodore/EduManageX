@@ -1,5 +1,7 @@
+//Made this file within a package model
 package model;
 
+//Imported necessary packages and classes
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -7,13 +9,14 @@ import java.util.Map;
 
 public class CollegeDepartmentData {
 
+    // Define static final maps for each department's curriculum
     public static final Map<String, List<String>> ENGINEERING_CURRICULUM = new HashMap<>();
     public static final Map<String, List<String>> INFORMATICS_COMPUTING_SCIENCES_CURRICULUM = new HashMap<>();
     public static final Map<String, List<String>> ARCHITECTURE_FINE_ARTS_DESIGN_CURRICULUM = new HashMap<>();
     public static final Map<String, List<String>> INDUSTRIAL_TECHNOLOGY_CURRICULUM = new HashMap<>();
 
     static {
-        // Engineering Curriculum
+        // Initialize Engineering Curriculum
         ENGINEERING_CURRICULUM.put("First Year", Arrays.asList(
             "Introduction to Engineering", "Mathematics for Engineers", "Physics for Engineers", 
             "Engineering Drawing", "Introduction to Computer Programming", "English Composition", 
@@ -34,7 +37,7 @@ public class CollegeDepartmentData {
             "Engineering Project Management", "Engineering Seminar", "Capstone Design Project", 
             "Engineering Electives", "Engineering Law and Regulations"));
 
-        // Informatics and Computing Sciences Curriculum
+        // Initialize Informatics and Computing Sciences Curriculum
         INFORMATICS_COMPUTING_SCIENCES_CURRICULUM.put("First Year", Arrays.asList(
             "Introduction to Computer Science", "Programming Fundamentals", "IT Fundamentals", 
             "Discrete Mathematics", "Computer Networks Basics", "Introduction to Information Systems", 
@@ -60,7 +63,7 @@ public class CollegeDepartmentData {
             "Big Data Technologies", "IT Strategic Planning", "Internship/Practical Training", 
             "Career Development and Industry Trends"));
 
-        // Architecture, Fine Arts and Design Curriculum
+        // Initialize Architecture, Fine Arts, and Design Curriculum
         ARCHITECTURE_FINE_ARTS_DESIGN_CURRICULUM.put("First Year", Arrays.asList(
             "Introduction to Architecture", "Architectural Design Basics", "Architectural History", 
             "Drawing Fundamentals", "Design Principles", "Introduction to Fine Arts", "Art History", 
@@ -81,7 +84,7 @@ public class CollegeDepartmentData {
             "Design Management", "Portfolio Development", "Fine Arts Exhibition", "Architectural Research", 
             "Internship", "Thesis Project"));
 
-        // Industrial Technology Curriculum
+        // Initialize Industrial Technology Curriculum
         INDUSTRIAL_TECHNOLOGY_CURRICULUM.put("First Year", Arrays.asList(
             "Introduction to Industrial Technology", "Basic Electronics", "Engineering Drawing", 
             "Technical Mathematics", "Workshop Practices", "Computer-Aided Design (CAD)", 
@@ -103,6 +106,8 @@ public class CollegeDepartmentData {
             "Human Factors in Industry", "Professional Ethics in Technology", "Industrial Internship", 
             "Capstone Project", "Industry Seminar", "Career Development Workshop"));
     }
+
+    // Method to get curriculum based on department and year level
     public static List<String> getCurriculum(String department, String yearLevel) {
         Map<String, List<String>> departmentCurriculum = switch (department) {
             case "College of Engineering" -> ENGINEERING_CURRICULUM;
@@ -115,4 +120,3 @@ public class CollegeDepartmentData {
         return departmentCurriculum != null ? departmentCurriculum.get(yearLevel) : null;
     }
 }
-
