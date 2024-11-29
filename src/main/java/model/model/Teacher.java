@@ -1,9 +1,12 @@
+//Define as package model
 package model;
 
+//Imported needed clas and packages
 import java.util.List;
 import java.util.Scanner;
 
 public class Teacher extends Person{
+    //Made my instance variables
     private String id;
     private String password;
     private String name;
@@ -15,6 +18,7 @@ public class Teacher extends Person{
     public String assignedYearLevel;
 
     public Teacher(String id, String password, String name) {
+        //Initialized them in overload constructor
         super(id, name);
         this.id = id;
         this.password = password;
