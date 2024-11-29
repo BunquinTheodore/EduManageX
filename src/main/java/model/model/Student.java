@@ -1,12 +1,16 @@
+//Define as a model package
 package model;
 
+//Imported needed packages and classes
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Student extends Person {
+    //Made my instance variables
     private String id;
     private String password;
     private String name;
@@ -22,6 +26,7 @@ public class Student extends Person {
 
 
     public Student(String id, String password, String name) {
+        //Initialized them in the overload constructor
         super(id, name);
         this.id = id;
         this.password = password;
